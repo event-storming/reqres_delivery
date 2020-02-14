@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Service
-@FeignClient(name ="product", url="http://localhost:8085")
+@FeignClient(name ="product", url="${api.url.product}")
 public interface ProductService {
 
     @RequestMapping(method = RequestMethod.PUT, value = "/product/decreaseStock/{productId}", consumes = "application/json")
