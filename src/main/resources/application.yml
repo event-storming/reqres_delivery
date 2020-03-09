@@ -26,6 +26,11 @@ api:
 ---
 spring:
   profiles: docker
+  sleuth:
+    sampler:
+      probability: 1
+    web:
+      skipPattern: (^cleanup.*|.+favicon.*)
 
 api:
   url:
