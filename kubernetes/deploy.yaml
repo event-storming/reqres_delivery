@@ -10,7 +10,7 @@ spec:
         app: delivery
     spec:
       containers:
-        - name: product
+        - name: delivery
           image: myeventstormingregistry.azurecr.io/delivery
           ports:
             - containerPort: 8080
